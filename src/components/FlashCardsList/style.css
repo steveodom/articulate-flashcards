@@ -1,0 +1,13 @@
+.flashcards {
+  transition: opacity 0.7s cubic-bezier(.6,0,.4,1);
+}
+
+.flashcards--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.flashcards--visible {
+  opacity: 1;
+  visibility: visible;
+}

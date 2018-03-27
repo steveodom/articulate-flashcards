@@ -1,0 +1,29 @@
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6em;
+  line-height: 1.5;
+  color: #313537;
+}
+
+.layout__wrapper {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  max-width: 102rem;
+  text-align: center;
+
+}

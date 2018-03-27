@@ -1,0 +1,7 @@
+.centered-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.3rem 2.5rem 2.5rem;
+  width: 100%;
+}

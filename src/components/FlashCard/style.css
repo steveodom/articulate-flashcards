@@ -1,0 +1,81 @@
+.block-flashcard {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 280px;
+  max-width: 280px;
+  min-height: 280px;
+  max-height: 280px;
+  box-sizing: border-box;
+  transition: transform .5s cubic-bezier(.6,0,.4,1);
+  perspective: 1000px;
+  transform: scale(.9) translateZ(0);
+  will-change: transform;
+  cursor: pointer;
+}
+
+.block-flashcard--flipped {
+  transform: scale(1) translateZ(0);
+  z-index: 1;
+}
+
+.block-flashcard:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.block-flashcard__back, .block-flashcard__front {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 .4rem 1.2rem .2rem rgba(0,0,0,.05);
+  border: 1px solid #ddd;
+  backface-visibility: hidden;
+  transition: transform .6s,z-index .6s,left .45s;
+  will-change: transform;
+}
+
+.block-flashcard__front {
+  border-top: none;
+  transform: rotateY(0deg);
+}
+
+.block-flashcard--flipped .block-flashcard__front {
+  transform: rotateY(-180deg);
+}
+
+.block-flashcard__front .block-flashcard__content {
+  border-top: 3px solid #eee;
+}
+
+.block-flashcard__back {
+  z-index: 1;
+  background-color: #fafafa;
+  transform: rotateY(180deg);
+}
+
+.block-flashcard--flipped .block-flashcard__back {
+  z-index: 100;
+  transform: rotateY(0deg);
+}
+
+.block-flashcard__content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.block-flashcard--fullimage {
+  background-size: cover;
+  background-position: 50% 50%;
+  border: 1px solid #ddd !important;
+}
+

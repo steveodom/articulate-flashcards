@@ -1,0 +1,9 @@
+.loader {
+  color: #707070;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+}
