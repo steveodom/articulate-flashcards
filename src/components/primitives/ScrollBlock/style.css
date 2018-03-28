@@ -9,7 +9,7 @@
   height: 100%
 }
 
-.scroll-block:after {
+.scroll-block.shaded:after {
   content: "";
   position: absolute;
   bottom: 0;
